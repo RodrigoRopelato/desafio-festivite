@@ -6,4 +6,52 @@
 
 :root{
   
+  --brand-light:#59B2FF;
+  --brand-mid:#3487CF;
+  --brand-dark:#1D6FB6;
+  
+  --purple:#B259FF;
+  --fuschia:#FF59F9;
+  --pink:#FF598B;
+  --orange:#FF8B59;
+  --yellow:#FFCD59;
+  --lime:#E1FF59;
+  --freen:#59FF91;
+  --cyan:#59FFF9;
+  --navy:#6A59FF;
+
+  --danger:#FF5959;
+
+  --input-base:#1C1F21;
+  --input-stroke:#363B40;
+  --input-placeholder:#869198;
+
+  --shape-background:#131516;
+  --shape-body:#212427;
+  --shape-button:#2D3136;
+  --shape-hover:#383D42;
+
+  --text-body:#C8CDD0;
+  --text-heading:#F9F9F9;
+
+  --font-logo:"Leckerli One";
+  --font-heading:"Baloo 2", sans-serif;
+  --font-family: "Open Sans", sans-serif;
+
+  --h1: 400 2.5rem var(--font-logo);
+  --h2: 500 1.75rem var(--font-heading);
+  --h3: 500 1.125rem var(--font-heading);
+  --text: 400 1rem var(--font-family);
+  --text-sm: 400 .875rem var(--font-family);
+  --text-xs: 400 .75rem var(--font-family);
+
+}
+
+body{
+  h1{font: var(--h1);}
+  h2{font: var(--h2);}
+  h3{font: var(--h3);}
+  .text{font:var(--text)}
+  .text-sm{font:var(--text-sm)}
+  .text-xs{font: var(--text-xs);}
 }
