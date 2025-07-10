@@ -1,0 +1,95 @@
+.radio-wrapper {
+  
+  display: flex;
+  padding: .25rem;
+  align-items: flex-start;
+  gap: .25rem;
+  align-self: stretch;
+
+  border-radius: .5rem;
+  border: 1px solid var(--input-stroke);
+  background-color: var(--input-base);
+}
+
+
+
+.radio-inner {
+  display: flex;
+  height: 2.5rem;
+  padding: .25rem;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  flex: 1 0 0;
+
+  
+  position: relative;
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  label {
+    all: unset;
+    font: var(--text-sm);
+  }
+
+
+  &:has(:checked) {
+    border-radius: .5rem;
+    background-color: var(--shape-button);
+
+    & label {
+      font: var(--text);
+    }
+
+    & svg path {
+      stroke: var(--brand-light);
+    }
+  }
+
+}
+
+.input-wrapper-color{
+  width: 100%;
+
+  & .radio-wrapper-color{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .65rem;
+  }
+}
+
+.radio-inner-color {
+  width: 2.5rem;
+  height: 2.5rem;
+    
+  position: relative;
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+  
+  & .color{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 6px solid var(--shape-button);
+  
+    &:has(:hover){
+      background-color: aliceblue;
+    }
+  }
+
+  &:has(:checked) {
+   outline: 2px solid var(--brand-light);
+   border-radius: 50%;
+  }
+
+}
