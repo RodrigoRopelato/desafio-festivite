@@ -1,0 +1,82 @@
+.check-inner {
+  width: 9rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+
+  gap: .75rem;
+  position: relative;
+
+  & [type="checkbox"] {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  span::before {
+    font: var(--text-sm);
+    content: "Escuro";
+  }
+
+  .check-image {
+    background-image: url(../../assets/icons/switch-toggle-off.svg);
+    flex: 0 0 4rem;
+    height: 2rem;
+  }
+
+  &:has(:checked) {
+    span::before {
+      content: "Claro";
+    }
+
+    .check-image {
+      background-image: url(../../assets/icons/switch-toggle-on.svg);
+    }
+  }
+}
+
+.terms{
+  margin: 3rem 0;
+  border-top: 1px solid var(--input-stroke);
+  padding-top: 2.5rem;
+  font: var(--text-sm);
+  
+
+  & .terms-wrapper {
+  margin-top: .25rem;
+  display: flex;
+  gap: .75rem;
+  align-items: flex-start;
+
+  & span {
+    font-weight: 500;
+    color: var(--brand-light);
+  }
+}
+
+& .checkbox-wrapper {
+    
+  position: relative;
+  & [type="checkbox"] {
+    all:unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  .checkbox-image {
+    flex: 0 0 1.25rem;
+    height: 1.25rem;
+
+    border-radius: .25rem;
+    border: 1px solid var(--input-stroke);
+    background-color: var(--input-base);
+  }
+  
+  &:has(:checked) .checkbox-image {
+    border-color: var(--brand-light);
+    padding: .125rem;
+    background: url(../../assets/icons/checkbox-checked.svg) no-repeat center/contain;
+  }
+}
+  
+}
