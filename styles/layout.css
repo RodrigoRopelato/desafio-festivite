@@ -1,6 +1,6 @@
 #app {
   display: grid;
-  grid-template-columns:1.5fr 3fr;
+  grid-template-columns: 1.5fr 3fr;
   gap: 1.25rem;
   padding: 1.25rem;
 
@@ -9,10 +9,10 @@
 
 }
 
-aside{
+aside {
   margin-left: auto;
-  
-  
+
+
   & .aside-container {
     min-width: 25rem;
     padding: 2rem;
@@ -23,49 +23,49 @@ aside{
     min-height: 45.5rem;
   }
 
-  & img{
+  & img {
     width: 2.75rem;
     height: 2.75rem;
     margin-bottom: 1rem;
   }
 
-  & h1{
+  & h1 {
     font: var(--h1);
     color: var(--pink);
     margin-bottom: .25rem;
   }
 
-  & p{
+  & p {
     color: var(--text-heading);
     font: var(--text);
   }
 
 }
 
-main{
+main {
   max-width: 51.25rem;
   overflow: auto;
 
-  
-  & .main-container{
+
+  & .main-container {
     width: auto;
-    padding: 5rem 8rem ;
+    padding: 5rem 8rem;
     background-color: var(--shape-body);
     border-radius: .75rem;
-    
+
   }
-  
-  & header h2{
+
+  & header h2 {
     font: var(--h2);
     color: var(--text-heading);
   }
-  
-  fieldset + fieldset {
+
+  fieldset+fieldset {
     margin-top: 3rem;
     width: 100%;
   }
 
-  .customization{
+  .customization {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -90,11 +90,10 @@ main{
   flex-direction: column;
 }
 
-.gap-16{
-  gap:1rem
+.gap-16 {
+  gap: 1rem
 }
 
 .gap-auto {
   justify-content: space-between;
 }
-

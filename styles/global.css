@@ -45,6 +45,27 @@
   --text-sm: 400 .875rem var(--font-family);
   --text-xs: 400 .75rem var(--font-family);
 
+
+  /* Define a largura da barra de rolagem */
+  ::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    background-color: var(--input-stroke);
+    /* Cor de fundo */
+  }
+
+  /* Define a aparência do controle deslizante */
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--input-stroke);
+    border-radius: 5px;
+    /* Arredondamento */
+  }
+
+  /* Define a aparência do track */
+  ::-webkit-scrollbar-track {
+    background-color:var(--input-base);
+  }
+
 }
 
 body{
