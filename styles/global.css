@@ -1,77 +1,82 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root{
-  
-  --brand-light:#59B2FF;
-  --brand-mid:#3487CF;
-  --brand-dark:#1D6FB6;
-  
-  --purple:#B259FF;
-  --fuschia:#FF59F9;
-  --pink:#FF598B;
-  --orange:#FF8B59;
-  --yellow:#FFCD59;
-  --lime:#E1FF59;
-  --freen:#59FF91;
-  --cyan:#59FFF9;
-  --navy:#6A59FF;
+:root {
 
-  --danger:#FF5959;
+  --brand-light: #59B2FF;
+  --brand-mid: #3487CF;
+  --brand-dark: #1D6FB6;
 
-  --input-base:#1C1F21;
-  --input-stroke:#363B40;
-  --input-placeholder:#869198;
+  --purple: #B259FF;
+  --fuschia: #FF59F9;
+  --pink: #FF598B;
+  --orange: #FF8B59;
+  --yellow: #FFCD59;
+  --lime: #E1FF59;
+  --freen: #59FF91;
+  --cyan: #59FFF9;
+  --navy: #6A59FF;
 
-  --shape-background:#131516;
-  --shape-body:#212427;
-  --shape-button:#2D3136;
-  --shape-hover:#383D42;
+  --danger: #FF5959;
 
-  --text-body:#C8CDD0;
-  --text-heading:#F9F9F9;
+  --input-base: #1C1F21;
+  --input-stroke: #363B40;
+  --input-placeholder: #869198;
 
-  --font-logo:"Leckerli One";
-  --font-heading:"Baloo 2", sans-serif;
+  --shape-background: #131516;
+  --shape-body: #212427;
+  --shape-button: #2D3136;
+  --shape-hover: #383D42;
+
+  --text-body: #C8CDD0;
+  --text-heading: #F9F9F9;
+
+  --font-logo: "Leckerli One";
+  --font-heading: "Baloo 2", sans-serif;
   --font-family: "Open Sans", sans-serif;
 
-  --h1: 400 2.5rem var(--font-logo);
-  --h2: 500 1.75rem var(--font-heading);
+  --h1: 400 2rem var(--font-logo);
+  --h2: 500 1.5rem var(--font-heading);
   --h3: 500 1.125rem var(--font-heading);
   --text: 400 1rem var(--font-family);
   --text-sm: 400 .875rem var(--font-family);
   --text-xs: 400 .75rem var(--font-family);
 
-
-  /* Define a largura da barra de rolagem */
-  ::-webkit-scrollbar {
-    width: 3px;
-    height: 3px;
-    background-color: var(--input-stroke);
-    /* Cor de fundo */
-  }
-
-  /* Define a aparência do controle deslizante */
-  ::-webkit-scrollbar-thumb {
-    background-color: var(--input-stroke);
-    border-radius: 5px;
-    /* Arredondamento */
-  }
-
-  /* Define a aparência do track */
-  ::-webkit-scrollbar-track {
-    background-color:var(--input-base);
-  }
-
 }
 
-body{
+body {
   background-color: var(--shape-background);
   font: var(--text);
   color: var(--text-body);
   margin: auto;
 }
 
+@media (width >=80em) {
+  :root {
+    --h1: 400 2.5rem var(--font-logo);
+    --h2: 500 1.75rem var(--font-heading);
+
+    /* Define a largura da barra de rolagem */
+    ::-webkit-scrollbar {
+      width: 3px;
+      height: 3px;
+      background-color: var(--input-stroke);
+      /* Cor de fundo */
+    }
+
+    /* Define a aparência do controle deslizante */
+    ::-webkit-scrollbar-thumb {
+      background-color: var(--input-stroke);
+      border-radius: 5px;
+      /* Arredondamento */
+    }
+
+    /* Define a aparência do track */
+    ::-webkit-scrollbar-track {
+      background-color: var(--input-base);
+    }
+  }
+}

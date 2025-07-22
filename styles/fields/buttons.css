@@ -1,4 +1,31 @@
+.actions-wrapper{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 button{
+  all: unset;
+  color: var(--text-heading);
+  background-color: var(--brand-dark);
+  border-radius: .5rem;
+  padding: .8rem 1.25rem;
+
+  display: flex;
+  gap: .75rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+
+  &:hover,
+    &:focus-within {
+      background-color: var(--brand-mid);
+    }
+}
+
+@media (width >= 80em) {
+  button{
   all: unset;
   color: var(--text-heading);
   background-color: var(--brand-dark);
@@ -11,9 +38,6 @@ button{
 
   margin-left: auto;
   cursor: pointer;
+}
 
-  &:hover,
-    &:focus-within {
-      background-color: var(--brand-mid);
-    }
 }

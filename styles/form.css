@@ -1,27 +1,58 @@
 @import url(fields/index.css);
 
-form{
-  margin-top: 2.5rem;
+form {
+  margin-top: 2rem;
+  width: 100%;
+
+  & .about {
+    &>div+.flex {
+      flex-direction: column;
+    }
+  }
+
+  & .contact {
+    &>div+.flex {
+      flex-direction: column;
+    }
+  }
+}
+
+fieldset {
+  border: none;
   width: 100%;
 }
 
-fieldset{
-  border: none;
-   width: 100%;
-}
-
-legend{
+legend {
   display: flex;
-  gap: .75rem;
+  gap: .5rem;
   align-items: center;
 
   font: var(--h3);
   color: var(--text-heading);
-  
-  margin-bottom: 1.5rem;
 
-  & img{
+  margin-bottom: .5rem;
+
+  & img {
     width: 1.5rem;
     height: 1.5rem;
   }
+}
+
+@media (width >=80em) {
+  form {
+    margin-top: 2.5rem;
+
+    & .contact {
+      &>div+.flex {
+        flex-direction: row;
+      }
+    }
+  }
+
+
+  legend {
+    gap: .75rem;
+    margin-bottom: 1.5rem;
+  }
+
 }

@@ -13,12 +13,12 @@
     inset: 0;
   }
 
-  span::before {
+  & span::before {
     font: var(--text-sm);
     content: "Escuro";
   }
 
-  .check-image {
+  & .check-image {
     background-image: url(../../assets/icons/switch-toggle-off.svg);
     flex: 0 0 4rem;
     height: 2rem;
@@ -29,7 +29,7 @@
       content: "Claro";
     }
 
-    .check-image {
+    & .check-image {
       background-image: url(../../assets/icons/switch-toggle-on.svg);
     }
   }
@@ -63,7 +63,7 @@
     inset: 0;
   }
 
-  .checkbox-image {
+  & .checkbox-image {
     flex: 0 0 1.25rem;
     height: 1.25rem;
 

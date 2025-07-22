@@ -1,26 +1,23 @@
 #app {
   display: grid;
-  grid-template-columns: 1.5fr 3fr;
-  gap: 1.25rem;
-  padding: 1.25rem;
-
-  height: 100vh;
-  overflow: hidden;
-
+  grid-template-columns: 1fr;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 aside {
-  margin-left: auto;
-
-
   & .aside-container {
-    min-width: 25rem;
+    margin-inline: auto;
+    max-width: 22.5rem;
     padding: 2rem;
     background-image: url(../assets/Background.png);
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: .75rem;
-    min-height: 45.5rem;
+    background-position: top;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    min-height: 40rem;
   }
 
   & img {
@@ -43,16 +40,15 @@ aside {
 }
 
 main {
-  max-width: 51.25rem;
-  overflow: auto;
-
 
   & .main-container {
-    width: auto;
-    padding: 5rem 8rem;
+    margin-inline: auto;
+    max-width: 22.5rem;
+    padding-inline: 1rem;
+    padding-block: 2rem;
     background-color: var(--shape-body);
-    border-radius: .75rem;
-
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
   }
 
   & header h2 {
@@ -60,40 +56,60 @@ main {
     color: var(--text-heading);
   }
 
-  fieldset+fieldset {
-    margin-top: 3rem;
-    width: 100%;
+  & fieldset+fieldset {
+    margin-top: 2rem;
   }
 
-  .customization {
+  & .customization {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
   }
 }
 
-.flex {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 1rem;
-}
+@media (width >=80rem) {
+  #app {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
 
-.flex-1 {
-  flex: 1;
-}
+  #app {
+    grid-template-columns: 1.5fr 3fr;
+    gap: 1.25rem;
+    padding: 1.25rem;
+    align-items: initial;
+    justify-content: initial;
 
-.flex-2 {
-  flex: 2;
-}
+    height: 100vh;
+    overflow: hidden;
+  }
 
-.flex-col {
-  flex-direction: column;
-}
+  aside {
+    margin-left: auto;
 
-.gap-16 {
-  gap: 1rem
-}
+    & .aside-container {
+      margin-inline: initial;
+      min-width: 25rem;
+      border-radius: .75rem;
+      min-height: 45.5rem;
+    }
+  }
 
-.gap-auto {
-  justify-content: space-between;
+  main {
+    max-width: 51.25rem;
+    overflow: auto;
+
+    & .main-container {
+      margin-inline: initial;
+      max-width: 100%;
+      padding: 5rem 8rem;
+      border-radius: .75rem;
+    }
+
+    fieldset+fieldset {
+      margin-top: 3rem;
+      width: 100%;
+    }
+  }
 }
